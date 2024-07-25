@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Find_Valid_Matrix_Given_Row_and_Column_Sums</StartupObject>
+    <StartupObject>LeetCode.Sort_an_Array</StartupObject>
   </PropertyGroup>
 
 </Project>
