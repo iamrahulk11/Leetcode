@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Number_Complement</StartupObject>
+    <StartupObject>LeetCode.Sum_of_Digits_of_String_After_Convert</StartupObject>
   </PropertyGroup>
 
 </Project>
