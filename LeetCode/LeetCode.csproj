@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Convert_Date_to_Binary</StartupObject>
+    <StartupObject>LeetCode.CODE360_Lower_Bound</StartupObject>
   </PropertyGroup>
 
 </Project>
