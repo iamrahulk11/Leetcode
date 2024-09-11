@@ -5,7 +5,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Find_Valid_Matrix_Given_Row_and_Column_Sums
     {
@@ -105,14 +105,14 @@ namespace LeetCode
         {
             int row_len = rowSum.Length;
             int col_len = colSum.Length;
-            int[,] result = new int[row_len,col_len];
+            int[,] result = new int[row_len, col_len];
 
             for (int i = 0; i < row_len; i++)
             {
                 for (int j = 0; j < colSum.Length; j++)
                 {
                     int x = Math.Min(rowSum[i], colSum[j]);
-                    result[i,j] = x;
+                    result[i, j] = x;
                     rowSum[i] -= x;
                     colSum[j] -= x;
                 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Sort_Array_by_Increasing_Frequency
     {
@@ -12,7 +12,7 @@ namespace LeetCode
 
             foreach (int i in result)
             {
-                Console.WriteLine("values : "+i);
+                Console.WriteLine("values : " + i);
             }
 
             Console.ReadLine();

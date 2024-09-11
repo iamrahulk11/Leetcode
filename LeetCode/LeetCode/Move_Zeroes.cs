@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Move_Zeroes
     {
         public static void Main()
         {
-            int[] arr = { 0, 1, 0, 3 , 12 }; 
+            int[] arr = { 0, 1, 0, 3, 12 };
 
             MoveZeroes(arr);
             Console.ReadLine();

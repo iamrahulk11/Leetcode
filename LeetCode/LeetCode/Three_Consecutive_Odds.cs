@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Three_Consecutive_Odds
     {
@@ -13,8 +13,8 @@ namespace LeetCode
         {
             //int[] arr = { 2, 6, 4, 1 };
             //int[] arr = { 1, 2, 34, 3, 4, 5, 7, 23, 12 };
-            int[] arr = { 1, 1,1 };
-            int counter = 0, index = 0;            
+            int[] arr = { 1, 1, 1 };
+            int counter = 0, index = 0;
 
             bool result = checkConsecutive(counter, arr, index);
             Console.WriteLine($"Result : {result}");

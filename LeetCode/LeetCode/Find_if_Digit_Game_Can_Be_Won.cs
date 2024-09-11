@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Find_if_Digit_Game_Can_Be_Won
     {
@@ -12,8 +12,8 @@ namespace LeetCode
         {
             int[] nums = { 1, 2, 3, 4, 10 };
 
-            Console.WriteLine("Alice can win : "+CanAliceWin(nums));
-          
+            Console.WriteLine("Alice can win : " + CanAliceWin(nums));
+
             Console.ReadLine();
         }
         public static bool CanAliceWin(int[] nums)

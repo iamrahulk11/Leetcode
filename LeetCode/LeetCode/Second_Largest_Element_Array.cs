@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Second_Largest_Element_Array
     {
@@ -16,8 +16,8 @@ namespace LeetCode
 
             foreach (int i in nums)
             {
-                if(first_largest < i) { first_largest = i; }
-                
+                if (first_largest < i) { first_largest = i; }
+
             }
         }
     }

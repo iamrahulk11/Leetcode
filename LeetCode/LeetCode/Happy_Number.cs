@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Happy_Number
     {
@@ -35,8 +35,8 @@ namespace LeetCode
 
             while (slow != fast)
             {
-                slow = (squareSum(slow));
-                fast = (squareSum(squareSum(fast)));
+                slow = squareSum(slow);
+                fast = squareSum(squareSum(fast));
                 if (fast == 1 || fast == 7 || fast == 10) return true;
             }
             if (fast == 1 || fast == 7 || fast == 10) return true;

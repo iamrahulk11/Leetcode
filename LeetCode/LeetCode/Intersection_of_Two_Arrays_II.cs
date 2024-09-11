@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     ///LEETCODE SOLUTION
     //public int[] Intersect(int[] nums1, int[] nums2)
@@ -65,20 +65,20 @@ namespace LeetCode
 
             List<int> list = new List<int>();
             int maxNumber = GetMaxElement(nums1, nums2);
-            int[] hashArr = new int[maxNumber+1];            
+            int[] hashArr = new int[maxNumber + 1];
 
-            foreach(int num in nums1)
+            foreach (int num in nums1)
             {
                 hashArr[num]++;
             }
-            
-            foreach(int num in nums2)
+
+            foreach (int num in nums2)
             {
-                if(hashArr[num] == 0) continue;
+                if (hashArr[num] == 0) continue;
                 list.Add(num);
                 hashArr[num]--;
             }
-            
+
             Console.ReadLine();
 
         }

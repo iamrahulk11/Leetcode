@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Sort_an_Array
     {
@@ -14,7 +14,7 @@ namespace LeetCode
             //int[] arr = { 5, 1, 1, 2, 0, 0 };
 
             //test case 2 :
-            int[] arr = { 1,1,-6,-4,5,-6,1,-4,1 };
+            int[] arr = { 1, 1, -6, -4, 5, -6, 1, -4, 1 };
 
             int[] answer = sortArray(arr);
 

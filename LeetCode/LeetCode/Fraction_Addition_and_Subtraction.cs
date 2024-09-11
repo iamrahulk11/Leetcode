@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Fraction_Addition_and_Subtraction
     {
@@ -23,37 +23,38 @@ namespace LeetCode
             string testcase8 = "-1/3-1/4-1/5-1/6-1/7-1/8-1/9-1/10-1/10-6/10";
             string testcase9 = "-1/2+1/2";
 
-            Console.WriteLine("Result : "+FractionAddition(testcase9));
+            Console.WriteLine("Result : " + FractionAddition(testcase9));
 
             Console.ReadLine();
 
         }
         public static string FractionAddition(string expression)
         {
-            string[] nums = Regex.Split(expression,"/|(?=[-+])");
+            string[] nums = Regex.Split(expression, "/|(?=[-+])");
             double a = 0;
             double result = 0;
             List<double> operarion = new();
 
-            foreach (string s in nums) {
+            foreach (string s in nums)
+            {
 
-                if(string.IsNullOrEmpty(s))
+                if (string.IsNullOrEmpty(s))
                 {
                     continue;
                 }
-                Console.WriteLine(s+"\t") ;
+                Console.WriteLine(s + "\t");
 
                 if (a == 0)
                 {
                     a = Convert.ToInt32(s);
                     continue;
                 }
-                operarion.Add(Convert.ToDouble(a/Convert.ToDouble(s)));
+                operarion.Add(Convert.ToDouble(a / Convert.ToDouble(s)));
 
                 a = 0;
             }
 
-            foreach(var value in operarion)
+            foreach (var value in operarion)
             {
                 result += value;
             }

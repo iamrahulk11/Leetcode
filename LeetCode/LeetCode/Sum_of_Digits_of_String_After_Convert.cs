@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Sum_of_Digits_of_String_After_Convert
     {
@@ -12,7 +12,7 @@ namespace LeetCode
         {
             string testCase = "iiii";
             int k = 1;
-            Console.WriteLine(GetLucky(testCase,k));
+            Console.WriteLine(GetLucky(testCase, k));
 
             Console.ReadLine();
         }
@@ -29,11 +29,11 @@ namespace LeetCode
         {
             string conversion = "";
 
-            for(int i = 0; i < givenValue.Length; i++)
+            for (int i = 0; i < givenValue.Length; i++)
             {
                 conversion += getIndex(givenValue[i], alphabets);
             }
-            
+
             return GetSum(k, conversion);
 
         }
@@ -41,29 +41,29 @@ namespace LeetCode
         private static string GetSum(int transform, string convertedString)
         {
             int sum = 0;
-            string tempAnswer = convertedString;           
+            string tempAnswer = convertedString;
 
-            for(int k = 0; k < transform; k++)
+            for (int k = 0; k < transform; k++)
             {
                 sum = 0;
                 for (int i = 0; i < tempAnswer.Length; i++)
                 {
-                    sum += (tempAnswer[i] - '0');
+                    sum += tempAnswer[i] - '0';
                 }
                 tempAnswer = sum.ToString();
             }
-            
-            return (tempAnswer);
+
+            return tempAnswer;
         }
 
         private static string getIndex(char s, char[] alphabets)
         {
             string value = "";
-            for(int i = 0; i < alphabets.Length; i++)
+            for (int i = 0; i < alphabets.Length; i++)
             {
                 if (s == alphabets[i])
                 {
-                    value = (i+1).ToString();
+                    value = (i + 1).ToString();
                 }
             }
             return value;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Count_Number_of_Teams
     {
@@ -22,20 +22,20 @@ namespace LeetCode
             int answer = NumTeams(rating);
 
             Console.WriteLine(answer);
-            
+
             Console.ReadLine();
         }
 
         public static int NumTeams(int[] rating)
         {
-            int count = 0, maxNumber = 0,minNumber = int.MaxValue;
-            foreach(int val in rating)
+            int count = 0, maxNumber = 0, minNumber = int.MaxValue;
+            foreach (int val in rating)
             {
                 maxNumber = Math.Max(maxNumber, val);
                 minNumber = Math.Min(minNumber, val);
-            }            
+            }
 
-            for(int i = 0; i < rating.Length; i++)
+            for (int i = 0; i < rating.Length; i++)
             {
                 for (int j = i + 1; j < rating.Length; j++)
                 {
@@ -47,7 +47,7 @@ namespace LeetCode
                     {
                         continue;
                     }
-                    for(int k= j + 1 ;k < rating.Length; k++)
+                    for (int k = j + 1; k < rating.Length; k++)
                     {
                         if (rating[i] < rating[j])
                         {
@@ -62,9 +62,9 @@ namespace LeetCode
                             {
                                 count++;
                             }
-                        }                        
+                        }
                     }
-                }                
+                }
             }
             return count;
         }

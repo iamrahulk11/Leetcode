@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Convert_Date_to_Binary
     {
         public static void Main(string[] args)
         {
             string date = "2080-02-29";
-            Console.WriteLine("Converted string : "+convertDateToBinary(date));
+            Console.WriteLine("Converted string : " + convertDateToBinary(date));
 
             Console.ReadLine();
         }
@@ -23,19 +23,19 @@ namespace LeetCode
             int start = 0;
             for (int i = 0; i < date.Length; i++)
             {
-                if (date[i] == '-' || (i + 1) == date.Length)
+                if (date[i] == '-' || i + 1 == date.Length)
                 {
                     convertedString += decToBinary(Convert.ToInt32(date.Substring(start, string.IsNullOrEmpty(convertedString) ? 4 : 2)));
 
-                    if((i+1) == date.Length)
+                    if (i + 1 == date.Length)
                     {
                         break;
                     }
 
-                    start = i+1;
+                    start = i + 1;
                     convertedString += "-";
                 }
-                
+
             }
 
             return convertedString;

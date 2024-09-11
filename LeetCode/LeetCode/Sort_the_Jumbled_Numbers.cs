@@ -1,7 +1,7 @@
 ﻿using System.Collections.Immutable;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Sort_the_Jumbled_Numbers
     {
@@ -34,7 +34,7 @@ namespace LeetCode
 
             foreach (int i in answer)
             {
-                Console.WriteLine($"values : "+i);
+                Console.WriteLine($"values : " + i);
             }
             Console.ReadLine();
         }
@@ -42,7 +42,7 @@ namespace LeetCode
         {
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
             Dictionary<int, int> dictionaryValue = new Dictionary<int, int>();
-            List<int> dublicate = new(); 
+            List<int> dublicate = new();
 
             foreach (int num in nums)
             {
@@ -50,15 +50,15 @@ namespace LeetCode
                 int val = num;
                 while (val > 0)
                 {
-                    int ones = (val % 10);         
+                    int ones = val % 10;
                     if (!dictionary.ContainsKey(ones))
                     {
                         dictionary.Add(ones, mapping[ones]);
-                    }                    
+                    }
                     list.Add(ones);
-                    val /= 10;                    
+                    val /= 10;
                 }
-                if(num == 0)
+                if (num == 0)
                 {
                     if (!dictionary.ContainsKey(num))
                     {
@@ -66,8 +66,8 @@ namespace LeetCode
                     }
                     list.Add(num);
                 }
-                int combine = dictionary[list[list.Count()-1]];
-                for(int i = list.Count()-2; i >= 0; i--)
+                int combine = dictionary[list[list.Count() - 1]];
+                for (int i = list.Count() - 2; i >= 0; i--)
                 {
                     combine = combine * 10 + dictionary[list[i]];
                 }
@@ -80,13 +80,13 @@ namespace LeetCode
                     dublicate.Add(num);
                 }
             }
-            var dic = dictionaryValue.OrderBy(kv => kv.Value).ToDictionary();            
+            var dic = dictionaryValue.OrderBy(kv => kv.Value).ToDictionary();
 
-            int[] result = new int[(dic.Count()+dublicate.Count())];
+            int[] result = new int[(dic.Count() + dublicate.Count())];
 
             int index = 0;
             int index2 = 0;
-            foreach(KeyValuePair<int,int> x in dic)
+            foreach (KeyValuePair<int, int> x in dic)
             {
                 if (dublicate.Count() > index2)
                 {
@@ -95,7 +95,7 @@ namespace LeetCode
                         result[index] = x.Key;
                         result[index + 1] = dublicate[index2];
                         index2++;
-                        index+=2;                        
+                        index += 2;
                         continue;
                     }
                 }
@@ -104,13 +104,13 @@ namespace LeetCode
             }
             if (dublicate.Count() > index2)
             {
-                for(int i= index2; i<dublicate.Count();i++)
+                for (int i = index2; i < dublicate.Count(); i++)
                 {
                     result[index] = dublicate[i];
-                    index++;                    
+                    index++;
                 }
             }
             return result;
-        }        
+        }
     }
 }

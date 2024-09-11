@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Sort_the_People
     {
@@ -13,7 +13,7 @@ namespace LeetCode
             string[] names = { "Mary", "John", "Emma" };
             int[] heights = { 180, 165, 170 };
 
-            string[] result = SortPeople(names,heights);
+            string[] result = SortPeople(names, heights);
             foreach (var val in result)
             {
                 Console.WriteLine($"name : {val}");
@@ -26,7 +26,7 @@ namespace LeetCode
         {
             Dictionary<int, string> Pvalues = new();
 
-            for(int i=0;i<heights.Length;i++)
+            for (int i = 0; i < heights.Length; i++)
             {
                 Pvalues.Add(heights[i], names[i]);
             }
@@ -35,7 +35,7 @@ namespace LeetCode
                                             .Select(kvp => kvp.Value)
                                             .ToArray();
 
-            return sortedValues;                                                                                                                                                                                                                                                                                                                                                                                                                              
-        }        
+            return sortedValues;
+        }
     }
 }

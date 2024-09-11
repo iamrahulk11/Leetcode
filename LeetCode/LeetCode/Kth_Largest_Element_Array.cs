@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Kth_Largest_Element_Array
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCode
 {
     internal class Radix_Sort
     {
@@ -25,7 +25,7 @@ namespace LeetCode
 
             for (int i = 0; i < n; i++)
             {
-                count[(array[i] / exp) % 10]++;
+                count[array[i] / exp % 10]++;
             }
 
             for (int i = 1; i < 10; i++)
@@ -35,8 +35,8 @@ namespace LeetCode
 
             for (int i = n - 1; i >= 0; i--)
             {
-                output[count[(array[i] / exp) % 10] - 1] = array[i];
-                count[(array[i] / exp) % 10]--;
+                output[count[array[i] / exp % 10] - 1] = array[i];
+                count[array[i] / exp % 10]--;
             }
 
             for (int i = 0; i < n; i++)
