@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.CODE360_Lower_Bound</StartupObject>
+    <StartupObject>LeetCode.DSA.Binary_Search.LC35_Search_Insert_Position</StartupObject>
   </PropertyGroup>
 
 </Project>

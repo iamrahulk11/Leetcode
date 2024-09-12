@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCode.DSA.Binary_Search.Day_1
+namespace LeetCode.DSA.Binary_Search
 {
     //Basic : Lower bound
     internal class CODE360_Lower_Bound
@@ -19,6 +13,7 @@ namespace LeetCode.DSA.Binary_Search.Day_1
 
         /// <summary>
         /// LOWER BOUND : ARR[INDEX] >= TARGET
+        /// UPPER BOUND : ARR[INDEX] > TARGET
         /// </summary>
         /// <param name="arr"></param>
         /// <param name="n"></param>

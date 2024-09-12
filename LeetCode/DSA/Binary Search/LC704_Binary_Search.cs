@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCode.DSA.Binary_Search.Day_1
+﻿namespace LeetCode.DSA.Binary_Search
 {
     //Basic Binary Search
     internal class LC704_Binary_Search
