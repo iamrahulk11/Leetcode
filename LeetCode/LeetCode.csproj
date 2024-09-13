@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.DSA.Binary_Search.LC35_Search_Insert_Position</StartupObject>
+    <StartupObject>LeetCode.DSA.Binary_Search.LC33_Search_in_Rotated_Sorted_Array</StartupObject>
   </PropertyGroup>
 
 </Project>
