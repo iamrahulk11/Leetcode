@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length</StartupObject>
+    <StartupObject>LeetCode.Lexicographical_Numbers</StartupObject>
   </PropertyGroup>
 
 </Project>
