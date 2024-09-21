@@ -1,2 +1,1 @@
-# Leetcode
-Problem Solved in c# language
+# Problem Solved in c# language
