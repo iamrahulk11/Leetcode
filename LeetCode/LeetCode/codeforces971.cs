@@ -18,5 +18,4 @@
             Console.WriteLine(moves);
         }
     }
-
 }
