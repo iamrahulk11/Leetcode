@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Lexicographical_Numbers</StartupObject>
+    <StartupObject>LeetCode.Separate_Black_and_White_Balls</StartupObject>
   </PropertyGroup>
 
 </Project>
