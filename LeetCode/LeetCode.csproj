@@ -5,7 +5,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Separate_Black_and_White_Balls</StartupObject>
+    <StartupObject>LeetCode.Find_the_Number_of_Distinct_Colors_Among_the_Balls</StartupObject>
   </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.2" />
+		<PackageReference Include="itext7.pdfhtml" Version="5.0.2" />
+	</ItemGroup>
 
 </Project>
