@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCode.LeetCode
+﻿namespace LeetCode.LeetCode
 {
     internal class Find_if_Digit_Game_Can_Be_Won
     {

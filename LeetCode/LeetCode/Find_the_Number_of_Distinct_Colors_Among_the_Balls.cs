@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 
 namespace LeetCode
 {
@@ -6,6 +7,14 @@ namespace LeetCode
     {
         private static void Main(string[] args)
         {
+            // Get the directory of the currently executing assembly (exe)
+            string exeDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+            // Navigate up two levels to get the directory just before 'bin'
+            string projectRootDirectory = Directory.GetParent(Directory.GetParent(exeDirectory).Parent.FullName).FullName;
+
+            Console.WriteLine(projectRootDirectory);
+
             int[][] queries = { [1, 4], [2, 5], [1, 3], [3, 4] };
             int limit = 4;
             int[] answer = QueryResults(limit, queries);

@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCode.Find_the_Number_of_Distinct_Colors_Among_the_Balls</StartupObject>
+    <StartupObject>LeetCode.Closest_Prime_Numbers_in_Range</StartupObject>
   </PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.2" />
